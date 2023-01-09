@@ -1,14 +1,14 @@
 package com.tutorialsninja.automation.framework;
 
+
+
 import org.apache.log4j.Logger;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
-import org.openqa.selenium.opera.OperaDriver;
 
 import com.tutorialsninja.automation.base.Base;
 
@@ -23,7 +23,8 @@ public class Browser {
 		switch (browser) {
 
 		case "chrome":
-			WebDriverManager.chromedriver().setup();
+			//WebDriverManager.chromedriver().driverVersion("108.0.5359.125 ").setup();
+			//System.setProperty("webdriver.chrome.driver","drivers//chromedriver.exe");
 			Base.driver = new ChromeDriver();
 			log.info("Chrome Browser is Started" + Base.driver.hashCode());
 			return Base.driver;
@@ -36,14 +37,11 @@ public class Browser {
 
 		case "opera":
 			WebDriverManager.operadriver().setup();
-			Base.driver = new OperaDriver();
+			//Base.driver = new OperaDriver();
 			log.info("Opera Browser is Started" + Base.driver.hashCode());
 			return Base.driver;
 
-		case "htmlunit":
-			Base.driver = new HtmlUnitDriver();
-			log.info("HtmlUnit Browser is Started" + Base.driver.hashCode());
-			return Base.driver;
+		
 
 		default:
 			WebDriverManager.firefoxdriver().setup();

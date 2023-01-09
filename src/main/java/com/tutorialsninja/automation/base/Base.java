@@ -18,7 +18,7 @@ public class Base {
 	
 	public static Logger log=Logger.getLogger(Base.class);
 	
-	public static WebDriver driver;
+	public static WebDriver driver = null;
 	public static ConfigurationReader reader;
 	
 	
@@ -41,7 +41,7 @@ public class Base {
 		}
 		log.info("Scenario Completed: "+scenario.getName());
 		log.info("Scenario Status is: "+scenario.getStatus());
-		Base.driver.quit();
+		//Base.driver.quit();
 		}
 	}
 

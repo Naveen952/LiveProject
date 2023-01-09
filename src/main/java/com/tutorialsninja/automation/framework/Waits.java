@@ -1,5 +1,6 @@
 package com.tutorialsninja.automation.framework;
 
+import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 import java.util.function.BooleanSupplier;
 
@@ -16,7 +17,7 @@ public class Waits {
 	
 	public Logger log=Logger.getLogger(Waits.class);
 	
-	static int timeinSec=30;
+	//static Duration timeinSec=30;
 	
 	
 	
@@ -25,12 +26,12 @@ public class Waits {
 	}
 	
 	
-	public static void waitUntilElementLocated(int time,WebElement element){
+	public static void waitUntilElementLocated(Duration time,WebElement element){
 		WebDriverWait wait=new WebDriverWait(Base.driver,time);
 		wait.until(ExpectedConditions.visibilityOf(element));
 	}
 	
-	public static void waitUntilElementToClick(int time,WebElement element){
+	public static void waitUntilElementToClick(Duration time,WebElement element){
 		WebDriverWait wait=new WebDriverWait(Base.driver,time);
 		wait.until(ExpectedConditions.elementToBeClickable(element));
 		}
@@ -77,12 +78,12 @@ public class Waits {
         }
     }
     
-    public static void waitUntil(BooleanSupplier condition, int seconds) {
-        new WebDriverWait(Base.driver, seconds).until((WebDriver driver) -> condition.getAsBoolean());
+    public static void waitUntil(BooleanSupplier condition, Duration timeinSec2) {
+        new WebDriverWait(Base.driver, timeinSec2).until((WebDriver driver) -> condition.getAsBoolean());
     }
 
     public static void waitUntil(BooleanSupplier condition) {
-        waitUntil(condition, timeinSec);
+       // waitUntil(condition, timeinSec);
     }
     
     
