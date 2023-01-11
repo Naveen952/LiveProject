@@ -23,4 +23,6 @@ public class Headerssection {
 	public static WebElement Register;
 	
 	
+	@FindBy(xpath="//a[text()='Login']")
+	public static WebElement Login;
 }
