@@ -64,8 +64,7 @@ public class Login {
 	    
 		
 		Assert.assertTrue(Elements.VerifyTextEquals(LoginPage.mainWarning, "An email with a confirmation link has been sent your email address."));
-		
-		
+			
 	}
 
 	
