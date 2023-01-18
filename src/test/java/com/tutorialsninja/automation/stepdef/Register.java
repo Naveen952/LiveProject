@@ -12,11 +12,13 @@ import com.tutorialsninja.automation.pages.AccountSuccessPage;
 import com.tutorialsninja.automation.pages.Headerssection;
 import com.tutorialsninja.automation.pages.RegisterPage;
 
-import cucumber.api.DataTable;
-import cucumber.api.java.en.Given;
-import cucumber.api.java.en.Then;
-import cucumber.api.java.en.When;
-import cucumber.api.java.en.And;
+import io.cucumber.datatable.DataTable;
+import io.cucumber.java.en.And;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+
+
 
 public class Register {
 	

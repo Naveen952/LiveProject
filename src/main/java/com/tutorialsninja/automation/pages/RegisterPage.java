@@ -9,7 +9,9 @@ import org.openqa.selenium.support.PageFactory;
 import com.tutorialsninja.automation.base.Base;
 import com.tutorialsninja.automation.framework.Elements;
 
-import cucumber.api.DataTable;
+import io.cucumber.datatable.DataTable;
+
+
 
 public class RegisterPage {
 	

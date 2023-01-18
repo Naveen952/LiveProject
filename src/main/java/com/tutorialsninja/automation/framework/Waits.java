@@ -17,7 +17,7 @@ public class Waits {
 	
 	public Logger log=Logger.getLogger(Waits.class);
 	
-	//static Duration timeinSec=30;
+	static int timeinSec=30;
 	
 	
 	

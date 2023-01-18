@@ -6,8 +6,8 @@ import com.tutorialsninja.automation.framework.Elements;
 import com.tutorialsninja.automation.pages.Headerssection;
 import com.tutorialsninja.automation.pages.SearchResultsPage;
 
-import cucumber.api.java.en.Then;
-import cucumber.api.java.en.When;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
 
 
 

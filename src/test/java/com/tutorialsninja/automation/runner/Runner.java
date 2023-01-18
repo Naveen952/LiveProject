@@ -2,14 +2,13 @@ package com.tutorialsninja.automation.runner;
 
 import org.junit.runner.RunWith;
 
-import cucumber.api.CucumberOptions;
-import cucumber.api.junit.Cucumber;
+import io.cucumber.junit.Cucumber;
+import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features= {"classpath:FeatureFiles/Search.feature"}
+@CucumberOptions(features= {"classpath:FeatureFiles/Orders.feature"}
 ,glue={"classpath:com.tutorialsninja.automation.stepdef"},
-plugin= {"html:target/cucumber_html_report"},
-tags= {"@Search","@Two"})
+plugin= {"html:target/cucumber_html_report"})
 public class Runner {
-
+	
 }
